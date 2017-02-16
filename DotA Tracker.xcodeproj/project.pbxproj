@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90C53071E557F90009130A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C53061E557F90009130A7 /* AppDelegate.swift */; };
+		E90C53091E557F90009130A7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C53081E557F90009130A7 /* RootViewController.swift */; };
+		E90C530B1E557F90009130A7 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C530A1E557F90009130A7 /* DataViewController.swift */; };
+		E90C530D1E557F90009130A7 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C530C1E557F90009130A7 /* ModelController.swift */; };
+		E90C53101E557F90009130A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90C530E1E557F90009130A7 /* Main.storyboard */; };
+		E90C53121E557F90009130A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90C53111E557F90009130A7 /* Assets.xcassets */; };
+		E90C53151E557F90009130A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90C53131E557F90009130A7 /* LaunchScreen.storyboard */; };
+		E90C53201E557F90009130A7 /* DotA_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C531F1E557F90009130A7 /* DotA_TrackerTests.swift */; };
+		E90C532B1E557F90009130A7 /* DotA_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C532A1E557F90009130A7 /* DotA_TrackerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E90C531C1E557F90009130A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90C52FB1E557F90009130A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90C53021E557F90009130A7;
+			remoteInfo = "DotA Tracker";
+		};
+		E90C53271E557F90009130A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90C52FB1E557F90009130A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90C53021E557F90009130A7;
+			remoteInfo = "DotA Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E90C53031E557F90009130A7 /* DotA Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DotA Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90C53061E557F90009130A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E90C53081E557F90009130A7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E90C530A1E557F90009130A7 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		E90C530C1E557F90009130A7 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		E90C530F1E557F90009130A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E90C53111E557F90009130A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90C53141E557F90009130A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E90C53161E557F90009130A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90C531B1E557F90009130A7 /* DotA TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DotA TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90C531F1E557F90009130A7 /* DotA_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotA_TrackerTests.swift; sourceTree = "<group>"; };
+		E90C53211E557F90009130A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90C53261E557F90009130A7 /* DotA TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DotA TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90C532A1E557F90009130A7 /* DotA_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotA_TrackerUITests.swift; sourceTree = "<group>"; };
+		E90C532C1E557F90009130A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90C53001E557F90009130A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53181E557F90009130A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53231E557F90009130A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90C52FA1E557F90009130A7 = {
+			isa = PBXGroup;
+			children = (
+				E90C53051E557F90009130A7 /* DotA Tracker */,
+				E90C531E1E557F90009130A7 /* DotA TrackerTests */,
+				E90C53291E557F90009130A7 /* DotA TrackerUITests */,
+				E90C53041E557F90009130A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90C53041E557F90009130A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90C53031E557F90009130A7 /* DotA Tracker.app */,
+				E90C531B1E557F90009130A7 /* DotA TrackerTests.xctest */,
+				E90C53261E557F90009130A7 /* DotA TrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90C53051E557F90009130A7 /* DotA Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				E90C53061E557F90009130A7 /* AppDelegate.swift */,
+				E90C53081E557F90009130A7 /* RootViewController.swift */,
+				E90C530A1E557F90009130A7 /* DataViewController.swift */,
+				E90C530C1E557F90009130A7 /* ModelController.swift */,
+				E90C530E1E557F90009130A7 /* Main.storyboard */,
+				E90C53111E557F90009130A7 /* Assets.xcassets */,
+				E90C53131E557F90009130A7 /* LaunchScreen.storyboard */,
+				E90C53161E557F90009130A7 /* Info.plist */,
+			);
+			path = "DotA Tracker";
+			sourceTree = "<group>";
+		};
+		E90C531E1E557F90009130A7 /* DotA TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E90C531F1E557F90009130A7 /* DotA_TrackerTests.swift */,
+				E90C53211E557F90009130A7 /* Info.plist */,
+			);
+			path = "DotA TrackerTests";
+			sourceTree = "<group>";
+		};
+		E90C53291E557F90009130A7 /* DotA TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E90C532A1E557F90009130A7 /* DotA_TrackerUITests.swift */,
+				E90C532C1E557F90009130A7 /* Info.plist */,
+			);
+			path = "DotA TrackerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90C53021E557F90009130A7 /* DotA Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90C532F1E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA Tracker" */;
+			buildPhases = (
+				E90C52FF1E557F90009130A7 /* Sources */,
+				E90C53001E557F90009130A7 /* Frameworks */,
+				E90C53011E557F90009130A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DotA Tracker";
+			productName = "DotA Tracker";
+			productReference = E90C53031E557F90009130A7 /* DotA Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E90C531A1E557F90009130A7 /* DotA TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90C53321E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA TrackerTests" */;
+			buildPhases = (
+				E90C53171E557F90009130A7 /* Sources */,
+				E90C53181E557F90009130A7 /* Frameworks */,
+				E90C53191E557F90009130A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90C531D1E557F90009130A7 /* PBXTargetDependency */,
+			);
+			name = "DotA TrackerTests";
+			productName = "DotA TrackerTests";
+			productReference = E90C531B1E557F90009130A7 /* DotA TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E90C53251E557F90009130A7 /* DotA TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90C53351E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA TrackerUITests" */;
+			buildPhases = (
+				E90C53221E557F90009130A7 /* Sources */,
+				E90C53231E557F90009130A7 /* Frameworks */,
+				E90C53241E557F90009130A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90C53281E557F90009130A7 /* PBXTargetDependency */,
+			);
+			name = "DotA TrackerUITests";
+			productName = "DotA TrackerUITests";
+			productReference = E90C53261E557F90009130A7 /* DotA TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90C52FB1E557F90009130A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = cban;
+				TargetAttributes = {
+					E90C53021E557F90009130A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E90C531A1E557F90009130A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E90C53021E557F90009130A7;
+					};
+					E90C53251E557F90009130A7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E90C53021E557F90009130A7;
+					};
+				};
+			};
+			buildConfigurationList = E90C52FE1E557F90009130A7 /* Build configuration list for PBXProject "DotA Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E90C52FA1E557F90009130A7;
+			productRefGroup = E90C53041E557F90009130A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90C53021E557F90009130A7 /* DotA Tracker */,
+				E90C531A1E557F90009130A7 /* DotA TrackerTests */,
+				E90C53251E557F90009130A7 /* DotA TrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90C53011E557F90009130A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90C53151E557F90009130A7 /* LaunchScreen.storyboard in Resources */,
+				E90C53121E557F90009130A7 /* Assets.xcassets in Resources */,
+				E90C53101E557F90009130A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53191E557F90009130A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53241E557F90009130A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90C52FF1E557F90009130A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90C53091E557F90009130A7 /* RootViewController.swift in Sources */,
+				E90C530D1E557F90009130A7 /* ModelController.swift in Sources */,
+				E90C530B1E557F90009130A7 /* DataViewController.swift in Sources */,
+				E90C53071E557F90009130A7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53171E557F90009130A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90C53201E557F90009130A7 /* DotA_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90C53221E557F90009130A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90C532B1E557F90009130A7 /* DotA_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E90C531D1E557F90009130A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90C53021E557F90009130A7 /* DotA Tracker */;
+			targetProxy = E90C531C1E557F90009130A7 /* PBXContainerItemProxy */;
+		};
+		E90C53281E557F90009130A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90C53021E557F90009130A7 /* DotA Tracker */;
+			targetProxy = E90C53271E557F90009130A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E90C530E1E557F90009130A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90C530F1E557F90009130A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E90C53131E557F90009130A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90C53141E557F90009130A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E90C532D1E557F90009130A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E90C532E1E557F90009130A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E90C53301E557F90009130A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DotA Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E90C53311E557F90009130A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DotA Tracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E90C53331E557F90009130A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DotA TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotA Tracker.app/DotA Tracker";
+			};
+			name = Debug;
+		};
+		E90C53341E557F90009130A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DotA TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotA Tracker.app/DotA Tracker";
+			};
+			name = Release;
+		};
+		E90C53361E557F90009130A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "DotA TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "DotA Tracker";
+			};
+			name = Debug;
+		};
+		E90C53371E557F90009130A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "DotA TrackerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cban.DotA-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "DotA Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90C52FE1E557F90009130A7 /* Build configuration list for PBXProject "DotA Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90C532D1E557F90009130A7 /* Debug */,
+				E90C532E1E557F90009130A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90C532F1E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90C53301E557F90009130A7 /* Debug */,
+				E90C53311E557F90009130A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E90C53321E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90C53331E557F90009130A7 /* Debug */,
+				E90C53341E557F90009130A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E90C53351E557F90009130A7 /* Build configuration list for PBXNativeTarget "DotA TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90C53361E557F90009130A7 /* Debug */,
+				E90C53371E557F90009130A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90C52FB1E557F90009130A7 /* Project object */;
+}
