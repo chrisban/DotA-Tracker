@@ -10,12 +10,11 @@
 		E90C53071E557F90009130A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C53061E557F90009130A7 /* AppDelegate.swift */; };
 		E90C53101E557F90009130A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90C530E1E557F90009130A7 /* Main.storyboard */; };
 		E90C53121E557F90009130A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90C53111E557F90009130A7 /* Assets.xcassets */; };
-		E90C53151E557F90009130A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90C53131E557F90009130A7 /* LaunchScreen.storyboard */; };
 		E90C53201E557F90009130A7 /* DotA_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C531F1E557F90009130A7 /* DotA_TrackerTests.swift */; };
 		E90C532B1E557F90009130A7 /* DotA_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C532A1E557F90009130A7 /* DotA_TrackerUITests.swift */; };
 		E90C533B1E55835F009130A7 /* d2bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E90C533A1E55835F009130A7 /* d2bg.jpg */; };
 		E90C533F1E5588CD009130A7 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C533E1E5588CD009130A7 /* MainPageViewController.swift */; };
-		E90C53411E559C80009130A7 /* GamePageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C53401E559C80009130A7 /* GamePageContentViewController.swift */; };
+		E90C53431E55B1B6009130A7 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90C53421E55B1B6009130A7 /* PageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +39,6 @@
 		E90C53061E557F90009130A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90C530F1E557F90009130A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E90C53111E557F90009130A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E90C53141E557F90009130A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90C53161E557F90009130A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90C531B1E557F90009130A7 /* DotA TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DotA TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90C531F1E557F90009130A7 /* DotA_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotA_TrackerTests.swift; sourceTree = "<group>"; };
@@ -50,7 +48,7 @@
 		E90C532C1E557F90009130A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90C533A1E55835F009130A7 /* d2bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d2bg.jpg; sourceTree = "<group>"; };
 		E90C533E1E5588CD009130A7 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		E90C53401E559C80009130A7 /* GamePageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePageContentViewController.swift; sourceTree = "<group>"; };
+		E90C53421E55B1B6009130A7 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +99,11 @@
 		E90C53051E557F90009130A7 /* DotA Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				E90C53391E558340009130A7 /* img */,
+				E90C53441E55B1C8009130A7 /* Supporting files */,
 				E90C53061E557F90009130A7 /* AppDelegate.swift */,
-				E90C53131E557F90009130A7 /* LaunchScreen.storyboard */,
-				E90C53161E557F90009130A7 /* Info.plist */,
-				E90C53111E557F90009130A7 /* Assets.xcassets */,
-				E90C530E1E557F90009130A7 /* Main.storyboard */,
 				E90C533E1E5588CD009130A7 /* MainPageViewController.swift */,
-				E90C53401E559C80009130A7 /* GamePageContentViewController.swift */,
+				E90C53421E55B1B6009130A7 /* PageContentViewController.swift */,
+				E90C530E1E557F90009130A7 /* Main.storyboard */,
 			);
 			path = "DotA Tracker";
 			sourceTree = "<group>";
@@ -137,6 +132,16 @@
 				E90C533A1E55835F009130A7 /* d2bg.jpg */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		E90C53441E55B1C8009130A7 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				E90C53391E558340009130A7 /* img */,
+				E90C53161E557F90009130A7 /* Info.plist */,
+				E90C53111E557F90009130A7 /* Assets.xcassets */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90C53151E557F90009130A7 /* LaunchScreen.storyboard in Resources */,
 				E90C53121E557F90009130A7 /* Assets.xcassets in Resources */,
 				E90C533B1E55835F009130A7 /* d2bg.jpg in Resources */,
 				E90C53101E557F90009130A7 /* Main.storyboard in Resources */,
@@ -280,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90C53411E559C80009130A7 /* GamePageContentViewController.swift in Sources */,
+				E90C53431E55B1B6009130A7 /* PageContentViewController.swift in Sources */,
 				E90C533F1E5588CD009130A7 /* MainPageViewController.swift in Sources */,
 				E90C53071E557F90009130A7 /* AppDelegate.swift in Sources */,
 			);
@@ -324,14 +328,6 @@
 				E90C530F1E557F90009130A7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E90C53131E557F90009130A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E90C53141E557F90009130A7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

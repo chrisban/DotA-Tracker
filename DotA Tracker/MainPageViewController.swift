@@ -9,34 +9,60 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController, UIPageViewControllerDataSource{
-
+    var arrPageTitles: NSArray = NSArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        arrPageTitles = ["Game Updates", "Esports Fluff"];
         
-        
-    }
+        self.dataSource = self
+        self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController],
+                                direction: UIPageViewControllerNavigationDirection.forward,
+                                animated: false, completion: nil)    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        return nil
+    
+    // MARK:- UIPageViewControllerDataSource Methods
+    
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    {
+        let pageContent: PageContentViewController = viewController as! PageContentViewController
+        var index = pageContent.pageIndex
+        if ((index == 0) || (index == NSNotFound))
+        {
+            return nil
+        }
+        index -= 1;
+        return getViewControllerAtIndex(index: index)
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        return nil
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    {
+        let pageContent: PageContentViewController = viewController as! PageContentViewController
+        var index = pageContent.pageIndex
+        if (index == NSNotFound)
+        {
+            return nil;
+        }
+        index += 1;
+        if (index == arrPageTitles.count)
+        {
+            return nil;
+        }
+        return getViewControllerAtIndex(index: index)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    func getViewControllerAtIndex(index: NSInteger) -> PageContentViewController
+    {
+        // Create a new view controller and pass suitable data.
+        let PageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageContentViewController") as! PageContentViewController
+        PageContentViewController.strTitle = "\(arrPageTitles[index])"
+        PageContentViewController.pageIndex = index
+        return PageContentViewController
     }
-    */
-
 }
