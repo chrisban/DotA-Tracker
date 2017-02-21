@@ -1,0 +1,6 @@
+framework module Pods_DotA_TrackerUITests {
+  umbrella header "Pods-DotA TrackerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

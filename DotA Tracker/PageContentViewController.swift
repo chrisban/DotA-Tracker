@@ -12,13 +12,28 @@ import UIKit
 class PageContentViewController: UIViewController {
 
     @IBOutlet var pageTitle: UILabel!
-
+    @IBOutlet var pageControlDisplay: UIPageControl!
+    
     var pageIndex: Int = 0
-	var strTitle: String!
-	
+    let pageTitles: NSArray = ["DotA Updates", "Esports Updates"]
+    
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		pageTitle.text = strTitle
+        displayViewContent()
 	}
+    
+    func displayViewContent() {
+        let currentPageTitle = pageTitles[pageIndex] as! String
+        pageTitle.text = currentPageTitle
+        pageControlDisplay.currentPage = pageIndex
+        
+        switch pageIndex {
+        case 1:
+            break;
+        case 2:
+            break;
+        default:
+            break;
+        }
+    }
 }

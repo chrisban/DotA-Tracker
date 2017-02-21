@@ -9,11 +9,11 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController, UIPageViewControllerDataSource{
+    let viewCount: Int = 2
     var arrPageTitles: NSArray = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrPageTitles = ["Game Updates", "Esports Fluff"];
         
         self.dataSource = self
         self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController],
@@ -36,7 +36,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         {
             return nil
         }
-        index -= 1;
+        index -= 1
         return getViewControllerAtIndex(index: index)
     }
     
@@ -44,16 +44,14 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
     {
         let pageContent: PageContentViewController = viewController as! PageContentViewController
         var index = pageContent.pageIndex
-        if (index == NSNotFound)
+        if (index != NSNotFound && index < (viewCount - 1))
         {
+            index += 1
+            return getViewControllerAtIndex(index: index)
+        } else {
             return nil;
         }
-        index += 1;
-        if (index == arrPageTitles.count)
-        {
-            return nil;
-        }
-        return getViewControllerAtIndex(index: index)
+        
     }
     
     
@@ -61,7 +59,6 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
     {
         // Create a new view controller and pass suitable data.
         let PageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageContentViewController") as! PageContentViewController
-        PageContentViewController.strTitle = "\(arrPageTitles[index])"
         PageContentViewController.pageIndex = index
         return PageContentViewController
     }
